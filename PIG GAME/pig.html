@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pig Game</title>
+	<link rel="stylesheet" href="pig.css">
+</head>
+<body onload="rules()">
+	<main>
+
+<!-- player 1 side -->
+
+		<div id="player--0" class="player--0 active">
+			<div class="top-left">
+				<h2>Total Score</h2>
+				<p>Player 1</p>
+				<span id="score--0"> 0 </span>
+			</div>
+			<div class="win-lose--0">
+				<span class="winner--0 hidden">you won!</span> <br>
+				<span class="loser--0 hidden">you lost!</span>
+			</div>
+			<div class="bottom-left">
+				<h2>CURRENT SCORE</h2>
+				<span id="current--0"> 0 </span>
+			</div>
+		</div>
+
+<!-- middle side-->
+
+			<button class="middle" id="startGame">Start Game</button>
+			<img class="middle hidden" id="dice" src="dice/side1.png" alt="dice">
+			<button class="middle" id="roll">Roll dice</button>
+			<button class="middle" id="hold">Hold</button> 
+			
+<!-- player 2 side -->
+
+		<div id="player--1" class="player--1">
+			<div class="top-right">
+				<h2>Total Score</h2>
+				<p>Player 2</p>
+				<span id="score--1"> 0 </span>
+			</div>
+			<div class="win-lose--1">
+				<span class="winner--1">you won!</span> <br>
+				<span class="loser--1">you lost!</span>
+			</div>
+			<div class="bottom-right">
+				<h2>CURRENT SCORE</h2>
+				<span id="current--1"> 0 </span>
+			</div>
+		</div>
+
+	</main>
+
+	<script type="text/javascript" src="pig.js"></script>
+</body>
+</html>
